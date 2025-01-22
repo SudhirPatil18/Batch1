@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(233, 232, 211);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#section {
+    border: 5px solid rgb(228, 106, 7);
+    max-width: 500px;
+    width: 90%;
+    padding: 20px;
+    background-color: #00FFFF;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(50, 50, 50);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 2px solid rgb(228, 106, 7);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+input[type="submit"] {
+    background-color: rgb(228, 106, 7);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(200, 90, 7);
+}
+
+@media (max-width: 600px) {
+    #section {
+        border-width: 3px;
+        border-radius: 15px;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div id='section'>
+        <form action="" id="form">
+            <label for="">Username</label>
+            <input type="text" id="Username" required><br>
+            <label for="">Password</label>
+            <input type="password" id="password" required><br>
+            <input type="submit" id="btn">
+        </form>
+        <div id="result">
+
+        </div>
+    </div>
+</body>
+<!-- case: username: admin@gmail.com and passowr: 1234 --- successfully  -->
+<script>
+const form = document.querySelector('#form');
+form.addEventListener('submit', (e) =>{
+    e.preventDefault();
+    const username = document.querySelector('#Username').value;
+    const pass = document.querySelector('#password').value;
+    const result = document.querySelector('#result')
+    if(username == 'admin@gmail.com' && pass == 1234) {
+          result.innerHTML ='Successfully login'
+    }
+    else{
+         result.innerHTML ='failed login'
+    }
+})
+
+
+</script>
+</html>

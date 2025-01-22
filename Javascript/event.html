@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="event">
+        <button onclick="document.getElementById('root').innerHTML='Hello World I am came from click event'"> Print</button>
+    </div>
+    <div id="root">
+
+    </div>
+    <button onclick="document.body.style.backgroundColor = 'orange'">Bg-change</button>
+    <button id="colorchange">Bg-2</button>
+    <button id="result">add</button>
+</body>
+<script>
+    const colorchange= document.querySelector('#colorchange')
+    colorchange.addEventListener('click', (e) =>{
+        document.body.style.backgroundColor ='yellow'
+    })
+
+    function add(){
+     return 5+90;
+    }
+</script>
+</html>
+
+<!-- onclick
+addEventListener -->

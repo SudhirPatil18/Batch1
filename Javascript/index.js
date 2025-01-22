@@ -2,6 +2,7 @@
 // console.log('Hello Word');
 
 const { error } = require("console");
+const { METHODS } = require("http");
 const { resolve } = require("path");
 
 /// console.log ---> print output content
@@ -305,18 +306,18 @@ class bij extends tec{
 //    console.log('error:',e)
 // })
 
-async function fetchdata(){
-  try{
-    const res = await fetch(`https://jsonplaceholder.typicode.com/todos/1`)
-    const data = await res.json();
-    console.log(typeof data)
-    console.log(data)
-  }
-  catch(e){
-    console.log('error',e)
-  }
-}
-fetchdata()
+// async function fetchdata(){
+//   try{
+//     const res = await fetch(`https://jsonplaceholder.typicode.com/todos/1`)
+//     const data = await res.json();
+//     console.log(typeof data)
+//     console.log(data)
+//   }
+//   catch(e){
+//     console.log('error',e)
+//   }
+// }
+// fetchdata()
 
 // function print(){
 //     console.log('hello word')
@@ -325,19 +326,59 @@ fetchdata()
 // print();
 // console.log('this async function')
 
+// setTimeout, setInterval,  --- async function
+// javascript - single thread --
 
+// setTimeout(() =>{
+//     console.log('hello I am SetTimeout async function')
+// },3000)
+// // console.log('I am out side Hello world')
+// const set=setInterval(()=>{
+//    console.log('I am SetInterval function')
+// },1000)
 
-
-
+// clearInterval(set)
 
 
 
 
 
 // prototype --->
+
+
+
 // clusore ---> 
+
+
+
+
+
 // DOM  --->  basically totally frontend
 // Event --->
 
+// const date = new Date();
+// console.log(date.getTime())
+// console.log(date.getDay())
+// console.log(date.)
+
 // int a=10;
 // let a=45;
+
+// argument, property(props) --- function add(num1,num2) --- arguments
+// add(54,65) -- props
+// highter order function and call back function
+// the function pass as a  argument for another function is know as call back function 
+// the fucntion accept as argruent for another function 
+// function add(a, b){
+//    return a+b;
+// }
+// function sub(a,b){
+//     return a-b;
+// }
+// function operation(a, b, operat){
+//     console.log(operat(a,b));
+// }
+
+// operation(4,5, add)
+
+// basic-- advance

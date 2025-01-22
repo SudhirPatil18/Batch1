@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hotel Menu Card</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Hotel Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('menu')">Menu</a></li>
+                <li><a href="#" onclick="showPage('about')">About</a></li>
+                <li><a href="#" onclick="showPage('contact')">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <section id="home" class="page active">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Our Hotel Restaurant</h1>
+                    <p>Explore our delicious menu crafted just for you!</p>
+                    <a href="#" class="cta-button" onclick="showPage('menu')">Explore Our Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="page">
+            <h2>Our Menu</h2>
+            <div class="menu-category">
+                <h3>Starters</h3>
+                <div class="menu-item">
+                    <img src="starter1.jpg" alt="Dish 1">
+                    <h4>Spring Rolls</h4>
+                    <p>Delicious crispy spring rolls filled with fresh vegetables.</p>
+                    <p class="price">$8.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="starter2.jpg" alt="Dish 2">
+                    <h4>Bruschetta</h4>
+                    <p>Toasted bread topped with fresh tomatoes, basil, and olive oil.</p>
+                    <p class="price">$6.99</p>
+                </div>
+            </div>
+            <div class="menu-category">
+                <h3>Main Courses</h3>
+                <div class="menu-item">
+                    <img src="main1.jpg" alt="Dish 3">
+                    <h4>Grilled Salmon</h4>
+                    <p>Fresh salmon grilled to perfection with a side of vegetables.</p>
+                    <p class="price">$18.99</p>
+                </div>
+                <div class="menu-item">
+                    <img src="main2.jpg" alt="Dish 4">
+                    <h4>Steak Frites</h4>
+                    <p>Juicy steak served with crispy fries and a side of sauce.</p>
+                    <p class="price">$24.99</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="page">
+            <h2>About Us</h2>
+            <p>We offer a cozy and intimate dining experience with a variety of dishes made from the freshest ingredients. Our hotel is known for its world-class service and exceptional food.</p>
+        </section>
+
+        <section id="contact" class="page">
+            <h2>Contact Us</h2>
+            <p>123 Hotel St, City Name</p>
+            <p>Email: contact@hotel.com</p>
+            <p>Phone: +123 456 789</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hotel Name. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

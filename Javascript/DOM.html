@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <!-- <label for="">input</label>
+
+    <input type="text" id="num" class="num1"> -->
+    <p id="master">hello</p>
+    <p class="s1">hello s1</p>
+    
+    <div id="root">
+
+    </div>
+    <p>past1</p>
+    <p>sdjfklj</p>
+    <p>dflsjdkl</p>
+    <p>dfk;ls</p>
+    <p>;dsklfs</p>
+    <p>lf;lsj</p>
+    <div id="root">
+
+    </div>
+    <p>fdjs</p>
+    <p>fjlsj</p>
+    <p>dl;fs;j</p>
+    <p>sdflj;l</p>
+
+    
+</body>
+<!-- /// getElementById, getElementBYClassName, querySelector, querySelectorAll -->
+<script>
+    const value =document.getElementById('master');
+    const value1 = document.getElementsByClassName('s1');
+    const queryid=document.querySelector('#master')
+    console.log(queryid)
+    console.log(queryid.id)
+    console.log(queryid.innerHTML)
+
+   const root= document.querySelector('#root');
+   root.innerHTML = 'Value passing by Dom {Hello word}'
+
+    // console.log(value)
+    // console.log(value1)
+    // value.style.background = 'red';
+
+    // const para = document.querySelectorAll('p')
+
+    
+</script>
+</html>
